@@ -23,7 +23,7 @@
       <div id="header">
         <nav>
         <ul id="nav_list" class="navScrollbar">
-          <li class="nav_element"><h3 class="display_inline"><a href="/#">Button</a></h3></li>
+          <li class="nav_element"><h3 class="display_inline"><a href="/index.php">Button</a></h3></li>
           <li class="nav_element"><h3 class="display_inline"><a href="link here">Button</a></h3></li>
           <li class="nav_element"><h3 class="display_inline"><a href="link here">Button</a></h3></li>
           <li class="nav_element"><h3 class="display_inline"><a href="link here">Button</a></h3></li>
