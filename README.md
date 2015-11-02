@@ -1,4 +1,4 @@
 # artman41.github.io
-csgo monthly
+Computer Science Webpage
 
-description here
+http://artman41.github.io
