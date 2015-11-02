@@ -23,6 +23,23 @@ function olLiTree( $tree ) {
     }
     echo '</ul>';
 }
+
+function getHtmlFiles($dir){
+$files = scandir($dir);
+$htmlFiles = array();
+
+print_r($htmlFiles);
+
+for($x = 0; count($files); 1){
+	if(endsWith($files[$x], ".html"))
+		$htmlFiles[count($files)] = $files[$x];
+		//print_r($htmlFiles);
+}
+
+olLiTree($htmlFiles);
+
+return $HtmlFiles
+}
 ?>
  </body>
 </html>

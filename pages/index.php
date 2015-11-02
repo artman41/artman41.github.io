@@ -5,24 +5,25 @@
   <title>PHP Test</title>
  </head>
  <body>
+ 
 <?php
 include "../php/functions.php";
 
-$dir = './a';
-$files = scandir($dir);
-$htmlFiles = array();
-
-print_r($htmlFiles);
-
-for($x = 0; count($files); 1){
-	if(endsWith($files[$x], ".html"))
-		$htmlFiles[count($files)] = $files[$x];
-		print_r($htmlFiles);
+$files = array();
+$dir = opendir('.'); // open the cwd..also do an err check.
+while(false != ($file = readdir($dir))) {
+        if(($file != ".") and ($file != "..") and ($file != "index.php")) {
+                $files[] = $file; // put in array.
+        }   
 }
 
-olLiTree($htmlFiles);
+natsort($files); // sort.
 
-print_r($files);
+// print.
+foreach($files as $file) {
+        echo("<a href='$file'>$file</a> <br />\n");
+}
+
 ?>
  </body>
 </html>
